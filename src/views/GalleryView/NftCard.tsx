@@ -3,17 +3,14 @@ import useSWR from "swr";
 import { EyeOffIcon } from "@heroicons/react/outline";
 
 import { fetcher } from "utils/fetcher";
-import { download } from "utils/download";
 
 type Props = {
   details: any;
-  onSelect: (id: string) => void;
   onTokenDetailsFetched?: (props: any) => unknown;
 };
 
 export const NftCard: FC<Props> = ({
   details,
-  onSelect,
   onTokenDetailsFetched = () => {},
 }) => {
   const { name, uri } = details?.data ?? {};

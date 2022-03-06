@@ -166,7 +166,7 @@ const NftList = ({ nfts, error }: NftListProps) => {
   return (
     <div className="grid grid-cols-2 gap-4 items-start md:grid-cols-4">
       {nfts?.map((nft) => (
-        <NftCard key={nft.mint} details={nft} onSelect={() => {}} />
+        <NftCard key={nft.mint} details={nft} />
       ))}
     </div>
   );
