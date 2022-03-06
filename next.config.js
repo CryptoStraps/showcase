@@ -40,7 +40,7 @@ const plugins = [
   ],
 ];
 
-const nextConfig = {,
+const nextConfig = {
   swcMinify: true,
   webpack: (config, { isServer }) => {
     if (!isServer) {
