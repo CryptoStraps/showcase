@@ -122,7 +122,7 @@ export const GalleryView: FC = ({}) => {
                               </svg>
                               <span>
                                 To download directly, right-click a video or
-                                image and button and choose &quot;Save Link
+                                image and button and choose &quot;Save Image/Video
                                 As...&quot;
                               </span>
                             </div>

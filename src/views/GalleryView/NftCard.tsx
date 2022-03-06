@@ -3,7 +3,7 @@ import useSWR from "swr";
 import { EyeOffIcon } from "@heroicons/react/outline";
 
 import { fetcher } from "utils/fetcher";
-import Image from "next/image";
+import { download } from "utils/download";
 
 type Props = {
   details: any;
@@ -84,7 +84,12 @@ export const NftCard: FC<Props> = ({
       <div className="card-body">
         <h2 className="text-sm text-center card-title">{name}</h2>
         <div className="grid grid-cols-2 gap-3 card-actions">
-          <a href={image} className="btn btn-outline" download>
+          <a
+            className="btn btn-outline"
+            href={image}
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-6 h-6"
@@ -100,8 +105,13 @@ export const NftCard: FC<Props> = ({
               />
             </svg>
           </a>
-          <a href={animation_url} className="btn btn-outline" download>
-          <svg
+          <a
+            href={animation_url}
+            target="_blank"
+            rel="noreferrer"
+            className="btn btn-outline"
+          >
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-5 h-5"
               viewBox="0 0 20 20"
