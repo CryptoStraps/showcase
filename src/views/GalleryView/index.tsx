@@ -64,7 +64,12 @@ export const GalleryView: FC = ({}) => {
         <div className="mb-2 shadow-lg navbar bg-neutral text-neutral-content rounded-box">
           <div className="flex-none">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-transparent.png" alt="Logo" className="mx-4" style={{height: 32}} />
+            <img
+              src="/logo-transparent.png"
+              alt="Logo"
+              className="mx-4"
+              style={{ height: 32 }}
+            />
           </div>
           <div className="flex-1 px-2 mx-2">
             <span className="text-2xl">CryptoStraps - Showcase</span>
