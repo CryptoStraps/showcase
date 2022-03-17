@@ -39,7 +39,7 @@ export const GalleryView: FC = ({}) => {
               (creator: any) =>
                 !!creator.verified &&
                 creator.address ===
-                  "9WkExkFaChk59c94JVdSbQeLZQiNbv8FRaANQ1tdFoDj"
+                  "9WkExkFaChk59c94JVdSbQeLZQiNbv8FRaANQ1tdFoDj" ||  creator.address === 'GpoURKLsYatf8RA8iGrJfQ1rT6w4Br2TWjC5wcUU5Xms'
             )
           );
           setNftState({
